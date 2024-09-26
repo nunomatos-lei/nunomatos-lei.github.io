@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+        <title>Quioto</title>
+    </head>
+    <body>
+        <header>
+            <h1>A Cidade de Quioto e a suas maravilhas</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="local.html">Localização</a>
+                <a href="multimedia.html">Multimédia</a>
+                <a href="info.html">Informação</a>
+                <a href="quizz.html">Quizz</a>
+                <a href="viagem.html">Viagem</a>
+            </nav>
+        </header>
+        <main>
+            <img style="height: 35%; width: 60%;" src="images/Chion-in2.jpg" alt="imagem_ded_tururu">
+            <h2>Quizz</h2>
+            <form method="get" action="https://postman-echo.com/get" id="quizForm">
+            <fieldset>
+                <Legend>Dados Pessoais</Legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autofocus>
+
+                <label for="apelido">Apelido:</label>
+                <input type="text" name="apelido" id="apelido" autofocus>
+                
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autofocus>
+            </fieldset>
+            <fieldset>
+                <Legend>Perguntas</Legend>
+
+            <p>
+                <legend>1. Qual era o antigo nome de Quioto antes de se tornar a capital imperial do Japão?</legend>
+                <label> Escolha o nome da capital:</label>
+
+                <input type="radio" id="capital1" name="capital" value="edo">
+                <label for="capital1">Edo</label>
+                
+                <input type="radio" id="capital2" name="capital" value="heian-kyo">
+                <label for="capital2">Heian-kyo</label>
+
+                <input type="radio" id="capital3" name="capital" value="nara">
+                <label for="capital3">Nara</label>
+
+                <input type="radio" id="capital4" name="capital" value="tokyo">
+                <label for="capital4">Tokyo</label>
+            </p>
+
+            <p>
+                <legend>2. O quanto gostou dos templos budistas que existem aproximadamente de Quioto?</legend>
+                <label>Arraste a bolinha:</label>
+                <input type="range" id="happy" name="yippe" min="0" max="100" value="50" step="1">
+                <label for="happy"></label>
+            </p>
+
+            <p>
+                <legend>3. Qual a cor que mais viu nos arredores da cidade?</legend>
+                <label>Escolha a cor:</label>
+                <input type="color" name="cor" id="cor" required autofocus="" size="3">
+                <label for="cor"></label>
+            </p>
+                
+            <p>
+                <legend>4. Qual foram os teus sitios favoritos?</legend>
+                <label>Escolhas as opções:</label>
+
+                <input type="checkbox" id="sitio1" name="sitio" value="kinkaku-ji">
+                <label for="sitio1">Kinkaku-ji (Pavilhão Dourado)</label>
+                
+                <input type="checkbox" id="sitio2" name="sitio" value="fushimi Inari Taisha">
+                <label for="sitio2">Fushimi Inari Taisha</label>
+
+                <input type="checkbox" id="sitio3" name="sitio" value="kiyomizu-dera">
+                <label for="sitio3">Kiyomizu-dera</label>
+
+                <input type="checkbox" id="sitio4" name="sitio" value="arashiyama">
+                <label for="sitio4">Arashiyama</label>
+
+                <input type="checkbox" id="sitio5" name="sitio" value="gion">
+                <label for="sitio5">Gion</label>
+
+                <input type="checkbox" id="sitio6" name="sitio" value="nijo castle">
+                <label for="sitio6">Nijo Castle</label>
+            </p>
+                
+            <p>
+                <p>
+                    <legend>Qual foi o dia que visitaste Quioto?</legend>
+                    <label>Insira a sua data de inicio e horas:</label>
+                    <input type="date" name="data" id="data1">
+                    <input type="time" name="time" id="time1">
+                    <label for="data1"></label>
+                    <label for="time1"></label>
+                </p>
+                <p>
+                    <label>Insira a sua data de regresso e horas:</label>
+                    <input type="date" name="data" id="data2">
+                    <input type="time" name="time" id="time2">
+                    <label for="data2"></label>
+                    <label for="time2"></label>
+                </p>
+            </p>
+
+            <p>
+                <legend>Quantos tempos existem em Quioto?</legend>
+                <label>Insira um número:</label>
+                <input type="number" name="number" id="number">
+                <label for="number"></label>
+            </p>
+
+            <p>
+                <legend>Que meios de transporte usaste?</legend>
+                <label>Escolha:</label>
+                <select>
+                    <option value="car">Carro</option>
+                    <option value="metro">Metro</option>
+                    <option value="bici">Bicicleta</option>
+                    <option value="feet">Os meus pés!!!!</option>
+                  </select>
+            </p>
+
+            <p>
+                <legend>
+                    Como se chama o famoso transporte de alta velocidade no Japão?</legend>  
+                <label></label>
+                <input type="text" name="texto" id="texto1" autocomplete="Shinkansen" placeholder="Escreva">
+                <label for="texto1"></label>
+            </p>
+
+                <input type="image" src="images/depositphotos_152771332-stock-photo-kyoto-japan-old-town-cityscape_small.jpg" alt="Quiz" >
+            </fieldset>
+        </form>
+        <div class="buttons">
+            <input type="submit" value="Submit" form="quizForm">
+            <input type="reset" value="Limpar" form="quizForm">
+        </div>
+        </main>
+        <footer>
+            <p>DIW 2024</p>
+            
+        </footer>
+    </body>
+</html>
