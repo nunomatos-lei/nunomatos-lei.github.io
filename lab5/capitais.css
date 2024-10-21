@@ -1,0 +1,122 @@
+* {
+    font-family: sans-serif;
+    padding: 0; 
+    margin: 0;
+  }
+  
+  
+  header, main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+  
+  header {
+    background: rgb(211, 191, 191);
+    position: sticky;
+    height: 10vh;
+    top: 0;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+  }
+
+  nav a {
+    padding: 10px 20px; 
+    text-decoration: none; 
+    color: #333; 
+    background-color: rgba(255, 255, 255, 0.349); 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: #000; 
+}
+
+nav a:visited {
+    color: purple;
+    background-color: rgb(123, 121, 121); 
+}
+  
+main {
+      height: 90vh;
+    background: rgb(241, 215, 241);
+}
+  
+#C1 {
+  display: flex;            
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center; 
+  padding: 20px;
+  background-color: rgb(151, 200, 249);
+  font-weight: bold;
+  height: 100vh;
+  width: 96.1vw;  
+}
+#C1 p {
+  text-align: center;
+  margin: -10px;
+  font-size: 1.5rem;
+  padding: 10px; 
+}
+#C1 div{
+  text-align: center;
+  margin: 5px;
+  font-style:italic
+}
+
+#paisagem {
+  position: relative;
+  background-color: rgb(187, 244, 244);
+  height: 57.5vw;
+  width: 99vw;
+}
+#paisagem img {
+  width: 99vw;
+}
+#paisagem p {
+  position: absolute;
+  left: 91vw;
+  background-color: rgb(187, 244, 244);
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.city{
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.city:hover {
+  transform: scale(1.05);
+}
+
+.city img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.city div {
+  margin-left: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
