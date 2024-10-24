@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "form"
+            "footer";
+    }
+    a { 
+       flex-direction: column;
+       text-align: center;
+       display: flex;   
+       justify-content: space-evenly; 
+    }
+}
+@media (min-width: 481px){
+    
+}
