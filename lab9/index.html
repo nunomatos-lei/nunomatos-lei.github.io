@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Virtual</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Nunex</h1>
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#cesto">Cesto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos Disponíveis</h2>
+      <section class="lista-produtos" id="produtos-container">
+        <!-- Os produtos serão inseridos aqui dinamicamente -->
+      </section>
+    </section>
+
+    <aside id="cesto">
+      <h2>Seu Cesto -</h2><h2 id="preco"></h2>
+      <section id="cesto-container"></section>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Loja Virtual. Todos os direitos reservados para a minha pessoa abum.</p>
+  </footer>
+
+  <script src="produtos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
