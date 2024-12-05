@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Virtual</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Nunex</h1>
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#cesto">Cesto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos Disponíveis</h2>
+      <div>
+        <label for="filtro-categoria">Filtrar:</label>
+        <select id="filtro-categoria">
+          <option>Todas as categorias</option>
+          <option>T-shirts</option>
+          <option>Canecas</option>
+          <option>Meias</option>
+        </select>
+    
+        <label for="filtro-preco">Ordenar:</label>
+        <select id="filtro-preco">
+          <option value="asc">Rating Crescente</option>
+          <option value="desc">Rating Decrescente</option>
+        </select>
+    
+        <label for="busca-nome">Procurar:</label>
+        <input type="text" id="busca-nome" placeholder="Pesquise por produto">
+
+        <button id="allin">Adicionar todos os produtos</button>
+        <button id="menosInfo">Menos info</button>
+      </div>
+      <section class="lista-produtos" id="produtos-container">
+        <!-- Os produtos serão inseridos aqui dinamicamente -->
+      </section>
+    </section>
+    
+    </section>
+
+    <aside id="cesto">
+      <h2>Seu Cesto -</h2><h2 id="preco"></h2>
+      <section id="cesto-container"></section>
+      <section id="checkout-section" style="margin-top: 20px;">
+        <h3>Custo total: <span id="custo-total"></span></h3>
+        <label>
+          <input type="checkbox" id="estudante-deisi">
+          És estudante do DEISI?
+        </label>
+        <br>
+        <label>
+          Cupão de desconto: 
+          <input type="text" id="cupao-desconto" placeholder="Digite seu cupão">
+        </label><p></p>
+        <label>
+          Morada:
+          <p></p>
+          <input type="text" id="address" placeholder="Digite a sua morada">
+        </label>
+        <br>
+        <button id="comprar-btn" style="margin-top: 10px;">Comprar</button>
+        <div id="resposta-compra" style="margin-top: 10px;"></div>
+      </section>
+    </aside>
+
+    
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Loja Virtual. Todos os direitos reservados para a minha pessoa abum.</p>
+  </footer>
+
+  <script src="produtos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
